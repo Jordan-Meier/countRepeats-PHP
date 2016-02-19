@@ -88,6 +88,20 @@
             //Assert
             $this->assertEquals(2 , $result);
         }
+
+        function test_countRepeats_specialCharacters()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $string = 'My guitar, which I have named betsy, is a fun guitar to play. GuiTar!!';
+            $find_word = 'guitar';
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($string, $find_word);
+
+            //Assert
+            $this->assertEquals(3 , $result);
+        }
     }
 
 ?>
