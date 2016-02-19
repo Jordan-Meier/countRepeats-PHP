@@ -60,6 +60,20 @@
             //Assert
             $this->assertEquals(1 , $result);
         }
+
+        function test_countRepeats_multipleWordsMultipleMatch()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $string = 'I am going to the guitar store to play a guitar';
+            $find_word = 'guitar';
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($string, $find_word);
+
+            //Assert
+            $this->assertEquals(2 , $result);
+        }
     }
 
 ?>
