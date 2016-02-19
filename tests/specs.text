@@ -1,0 +1,34 @@
+Plain English Specs
+
+1. A single letter entered matching.
+    string_input = o
+    word_input = o
+    output = 1
+2. A single letter entered not matching.
+    string_input = o
+    word_input = d
+    output = 0
+3. Word matching single word entered.
+    string_input = guitar
+    word_input = guitar
+    output = 1
+3. Word not matching single word entered.
+    string_input = guitar
+    word_input = piano
+    output = 0
+4. Word matching once, multiple words entered.
+    string_input = I enjoy playing guitar
+    word_input = guitar
+    output = 1
+5. Multiple instances of word matching, multiple words entered.
+    string_input = I am going to the guitar store to play a guitar
+    word_input = guitar
+    output = 2
+6. Takes into account case sensitivity.
+    string_input = I am going to Guitar Store to play a guitar
+    word_input = guitAr
+    output = 2
+7. Takes into account punctuation/special characters.
+    string_input = My guitar, which I have named betsy, is a fun guitar to play. GuiTar!!
+    word_input = guitar
+    output = 3
