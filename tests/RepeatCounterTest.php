@@ -74,6 +74,20 @@
             //Assert
             $this->assertEquals(2 , $result);
         }
+
+        function test_countRepeats_caseSensitivity()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $string = 'I am going to Guitar Store to buy a guitar';
+            $find_word = 'guitar';
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($string, $find_word);
+
+            //Assert
+            $this->assertEquals(2 , $result);
+        }
     }
 
 ?>
