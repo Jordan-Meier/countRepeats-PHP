@@ -13,7 +13,7 @@
             $find_word = 'guitar';
 
             //Act
-            $result = $test_RepeatCounter->explodeString($string, $find_word);
+            $result = $test_RepeatCounter->explodeString($string);
 
             //Assert
             $this->assertEquals(array('guitar', 'is', 'fun'), $result);
