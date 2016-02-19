@@ -5,19 +5,33 @@
     class RepeatCounterTest extends PHPUnit_Framework_TestCase
     {
 
-        function test_method_breakitdown()
+        function test_countRepeats_explodeString()
         {
             //Arrange
             $test_RepeatCounter = new RepeatCounter;
-            $string = ;
-            $find_word = ;
+            $string = 'guitar is fun';
+            $find_word = 'guitar';
 
             //Act
-            $result = $test_RepeatCounter->playGame($string, $find_word);
+            $result = $test_RepeatCounter->countRepeats($string, $find_word);
 
             //Assert
-            $this->assertEquals(, $result1);
+            $this->assertEquals(array('guitar', 'is', 'fun'), $result);
+        }
 
+        // function test_countRepeats_singleWordMatch()
+        // {
+        //     //Arrange
+        //     $test_RepeatCounter = new RepeatCounter;
+        //     $string = 'guitar';
+        //     $find_word = 'guitar';
+        //
+        //     //Act
+        //     $result = $test_RepeatCounter->countRepeats($string, $find_word);
+        //
+        //     //Assert
+        //     $this->assertEquals(1, $result);
+        // }
     }
 
 ?>
