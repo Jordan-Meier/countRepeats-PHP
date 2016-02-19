@@ -1,0 +1,16 @@
+body {
+    background-image: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/subtle_white_mini_waves.png');
+}
+
+.jumbotron {
+
+}
+
+.jumbotron h1 {
+    font-family: 'Megrim', cursive;
+    font-size: 85px;
+}
+
+.container {
+    font-family: 'Lato', sans-serif;
+}
