@@ -101,5 +101,19 @@
             //Assert
             $this->assertEquals(3 , $result);
         }
+
+        function test_countRepeats_ifBlank()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $string = '';
+            $find_word = '';
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($string, $find_word);
+
+            //Assert
+            $this->assertEquals("Please fill both form fields with text" , $result);
+        }
     }
 ?>

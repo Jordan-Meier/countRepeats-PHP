@@ -15,7 +15,9 @@
             $string_array = $this->explodeString($stripped_string);
             $word_count = 0;
             foreach ($string_array as $word) {
-                if($word == $stripped_word) {
+                if($string == null || $find_word == null){
+                    $word_count = "Please fill both form fields with text";    
+                } elseif ($word == $stripped_word) {
                     $word_count += 1;
                 }
             }
