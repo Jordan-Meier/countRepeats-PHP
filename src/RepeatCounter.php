@@ -21,8 +21,5 @@
             }
             return $word_count;
         }
-
-
     }
-
 ?>
