@@ -32,6 +32,20 @@
             //Assert
             $this->assertEquals(1, $result);
         }
+
+        function test_countRepeats_singleWordNoMatch()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $string = 'guitar';
+            $find_word = 'piano';
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($string, $find_word);
+
+            //Assert
+            $this->assertEquals(0, $result);
+        }
     }
 
 ?>
