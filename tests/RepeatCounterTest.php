@@ -4,7 +4,6 @@
 
     class RepeatCounterTest extends PHPUnit_Framework_TestCase
     {
-
         function test_explodeString()
         {
             //Arrange
@@ -103,5 +102,4 @@
             $this->assertEquals(3 , $result);
         }
     }
-
 ?>
