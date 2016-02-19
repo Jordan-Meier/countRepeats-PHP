@@ -11,6 +11,10 @@
         return $app['twig']->render('index.html.twig');
     });
 
-
+    $app->get("/count_results", function() use ($app) {
+        $my_RepeatCounter = new RepeatCounter;
+        $word_count = $my_RepeatCounter->countRepeats($_GET['string'], $_GET['word']);
+        return $app['twig']->render('results.html.twig', array('result' => $word_count));
+    });
     return $app;
 ?>
