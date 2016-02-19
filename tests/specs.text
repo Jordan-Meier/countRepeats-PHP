@@ -1,14 +1,10 @@
 Plain English Specs
 
-1. A single letter entered matching.
-    string_input = o
-    word_input = o
-    output = 1
-2. A single letter entered not matching.
-    string_input = o
-    word_input = d
-    output = 0
-3. Word matching single word entered.
+1. Will explode string into an array.
+    string_input = guitar is fun
+    word_input = guitar
+    output = array('guitar', 'is', 'fun')
+2. Word matching single word entered.
     string_input = guitar
     word_input = guitar
     output = 1
