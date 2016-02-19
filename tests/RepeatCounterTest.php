@@ -44,7 +44,21 @@
             $result = $test_RepeatCounter->countRepeats($string, $find_word);
 
             //Assert
-            $this->assertEquals(0, $result);
+            $this->assertEquals(0 , $result);
+        }
+
+        function test_countRepeats_multipleWordsSingleMatch()
+        {
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $string = 'I enjoy playing guitar';
+            $find_word = 'guitar';
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($string, $find_word);
+
+            //Assert
+            $this->assertEquals(1 , $result);
         }
     }
 
