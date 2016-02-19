@@ -28,3 +28,7 @@ Plain English Specs
     string_input = My guitar, which I have named betsy, is a fun guitar to play. GuiTar!!
     word_input = guitar
     output = 3
+8. Will remind user to fill out both form inputs if they are left blank
+    string_input = ""
+    word_input = ""
+    output = "Please enter text into both form inputs"
