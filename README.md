@@ -1,12 +1,12 @@
-# TITLE
+# Count Repeats Assessment
 
-## Epicodus PHP, Week 2: BDD Practice
+## Epicodus PHP, Week 2: Code Review
 
 ### By: Jordan Meier
 
 ### Description
 
-
+This week's code review project is a website where a user can see how frequently a given word appears in a given string, both of which the user enters into a form. It will check for full word matches only (ie: the word "cat" appears in "the cat in the hat" 1 time).
 
 ### Known Bugs
 
@@ -29,7 +29,7 @@ php -S localhost:8000
 
 
 ### Technologies Used
-* html
+* HTML
 * CSS
 * PHP
 * Silex
