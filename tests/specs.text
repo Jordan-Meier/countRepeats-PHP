@@ -1,34 +1,34 @@
 Plain English Specs
 
-1. Will explode string into an array.
+1. Will explode string into an array. This will be a function on its own, and is an important behavior to code for because in order to find word matches, I am going to be looping through the words in the string to see if they match the given word to count.
     string_input = guitar is fun
     word_input = guitar
     output = array('guitar', 'is', 'fun')
-2. Word matching single word entered.
+2. Word matching single word entered. A single word is the simplest behavior to test to ensure the method is working.
     string_input = guitar
     word_input = guitar
     output = 1
-3. Word not matching single word entered.
+3. Word not matching single word entered. This behavior ensures the method works by throwing it a word that will not exist in the string.
     string_input = guitar
     word_input = piano
     output = 0
-4. Word matching once, multiple words entered.
+4. Word matching once, multiple words entered. The complexity is slightly increased, making sure that the method still works if there are more than one word entered in the string.
     string_input = I enjoy playing guitar
     word_input = guitar
     output = 1
-5. Multiple instances of word matching, multiple words entered.
+5. Multiple instances of word matching, multiple words entered. The complexity of the behavior is increased again, ensuring the method works when there are more than one instances of the given word in the given string.
     string_input = I am going to the guitar store to play a guitar
     word_input = guitar
     output = 2
-6. Takes into account case sensitivity.
+6. Takes into account case sensitivity. This makes sure that even if the user enters certain instances of the word with capital letters, the count will still be accurate.
     string_input = I am going to Guitar Store to play a guitar
     word_input = guitAr
     output = 2
-7. Takes into account punctuation/special characters.
+7. Takes into account punctuation/special characters. This makes sure that even if the user enters certain instances of the word followed by punctuation such as commas, periods, question marks or exclamation points, the count will still be accurate.
     string_input = My guitar, which I have named betsy, is a fun guitar to play. GuiTar!!
     word_input = guitar
     output = 3
-8. Will remind user to fill out both form inputs if they are left blank
+8. Will remind user to fill out both form inputs if they are left blank. I realized at the end of the project that I had not accounted for if the user leaves one or both of the input fields blank. This will provide them with a friendly reminder to fill both fields if they want the site to work correctly.
     string_input = ""
     word_input = ""
     output = "Please enter text into both form inputs"
