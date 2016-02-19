@@ -2,20 +2,25 @@
 <html>
     <head>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
-        <title></title>
+        <title>Count Repeats</title>
     </head>
     <body>
         <div class="container">
-            <h1></h1>
-            <form action="/">
-                <div class="form-group">
-                    <label for="input_1"></label>
+            <h1>Count Repeats</h1>
+            <div class="row">
+                        <h4>Fill out the form below to discover how many times a given word appears in a given string of words.</h4>
+                        <div class="col-sm-8">
+                            <form class="form-group" action="/count_results" method="post">
+                                <label for="string">Enter a quote, phrase or sentence:</label>
+                                <input class="form-control" type="text" name="string" id="string"><br><br>
 
-                    <label for="input_2"></label>
+                                <label for="word">Enter a word within that phrase to count:</label>
+                                <input class="form-control" type="text" name="word" id="word"><br><br>
 
-                </div>
-                <button class="btn btn-success" type="submit">Play!</button>
-            </form>
+                                <button class="btn" type="submit">Count Word</button>
+                            </form>
+                        </div>
+                    </div>
             <hr>
             <br>
             <!-- <div class="well">
