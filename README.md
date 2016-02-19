@@ -8,6 +8,8 @@
 
 This week's code review project is a website where a user can see how frequently a given word appears in a given string, both of which the user enters into a form. It will check for full word matches only (ie: the word "cat" appears in "the cat in the hat" 1 time).
 
+![Alt text](web/images/screenshot.jpg)
+
 ### Known Bugs
 
 No known bugs at this time.
